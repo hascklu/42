@@ -1,0 +1,4 @@
+docker container run -d \
+		--name lair -p 8080:80 \
+		-e WORDPRESS_DB_HOST=$(docker-machine ip Char):32775 \
+		-e WORDPRESS_DB_PASSWORD='Kerrigan' wordpress

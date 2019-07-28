@@ -1,0 +1,7 @@
+FROM ft_docker/ft_rails:latest
+
+# docker build -t ft_docker/ft_rails .
+# docker build -t local/myrails .sample
+# docker run -p 3000:3000 --rm local/myrails
+
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]

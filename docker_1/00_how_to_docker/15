@@ -1,0 +1,7 @@
+docker run -d \
+		--name roach-warden \
+		-l spawning-pool:mysql \
+		-e PMA_HOST=$(docker-machine ip Char) \
+		-e PMA_PORT=32775 \
+		-e MYSQL_ROOT_PASSWORD='Kerrigan' \
+		-p 8081:80 phpmyadmin/phpmyadmin
